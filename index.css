@@ -1,4 +1,5 @@
 #clockContainer {
+    position: relative;
     margin: auto;
     border: 1px solid red;
     height: 40vh;
@@ -14,25 +15,25 @@
 }
 
 #hour {
-    width: 0.4%;
-    height: 12%;
-    top: 9.5%;
-    left: 49.9%;
+    width: 0.9%;
+    height: 23%;
+    top: 27.5%;
+    left: 50%;
     opacity: 0.8;
 }
 
 #minute {
-    width: 0.4%;
-    height: 12%;
-    top: 9.5%;
-    left: 49.9%;
-    display: none;
+    width: 0.6%;
+    height: 31%;
+    top: 19.5%;
+    left: 50%;
+    opacity: 0.8;
 }
 
 #second {
-    width: 0.4%;
-    height: 12%;
-    top: 9.5%;
-    left: 49.9%;
-    display: none;
+    width: 0.3%;
+    height: 39%;
+    top: 11.5%;
+    left: 50%;
+    opacity: 0.8;
 }
