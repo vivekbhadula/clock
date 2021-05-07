@@ -9,7 +9,7 @@ body {
 
 #clockContainer {
     position: absolute;
-    top: 20px;
+    top: 70px;
     height: 400px;
     width: 400px;
     background: url(clock.jpg) no-repeat;
@@ -54,13 +54,15 @@ body {
 /* Main clock ends */
 
 p.mainslogan {
-    font-size: 65px;
+    font-size: 40px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #c0fefc;
     position: absolute;
     display: inline-block;
-    left: 58vh;
+    left: 43vh;
     top: 60vh;
+    margin-bottom: 30px;
 }
 
 /* Floating clock images starts */
@@ -110,11 +112,11 @@ img {
 
 .six {
     right: 100px;
-    animation: textloopright linear 5s infinite;
+    animation: textloopright linear 4s infinite;
 }
 
 .seven {
-    left: 350px;
+    left: 1000px;
     top: 180px;
     /* animation: textloopright linear 5s infinite; */
 }
