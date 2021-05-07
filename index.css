@@ -1,3 +1,8 @@
+body {
+    background-color: brown;
+    box-sizing: border-box;
+}
+
 #clockContainer {
     position: relative;
     margin: auto;
@@ -7,6 +12,7 @@
     width: 400px;
     background: url(clock.jpg) no-repeat;
     background-size: 100%;
+    border-radius: 50%;
 }
 
 #hour, #minute, #second {
@@ -38,4 +44,25 @@
     top: 11.2%;
     left: 50.247%;
     opacity: 0.8;
+}
+
+p {
+    font-size: 65px;
+    text-align: center;
+    animation: textloop linear 6s infinite;
+}
+
+@keyframes textloop {
+    0% {
+        transform: translateX(150vh)
+    }
+    25% {
+        transform: translateX(90vh);
+    }
+    50% {
+        transform: translateX(30vh);
+    }
+    100% {
+        transform: translateX(-130vh);
+    }
 }
