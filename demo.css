@@ -1,30 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
-    background-color: brown;
+   background-color: #3edbf0;
     box-sizing: border-box;
     overflow: hidden;
-    animation: example linear 4s alternate-reverse infinite;
+    animation: bgchange xample linear 4s alternate-reverse infinite;
 }
 
 #clockContainer {
-    position: absolute;
+    border: 2px solid black;
+    position: relative;
     background: url(clock.jpg) no-repeat;
     height: 40rem;
     width: 40rem;
     background-size: 100%;
     border-radius: 50%;
-    top: 5rem;
-    margin-left: 50vw;
-    display: inline-block;
+    /* top: 2.5rem;
+    margin-left: 50vw; */
+    /* left: 36%; */
+    /* display: inline-block; */
+    margin: auto;
 }
 
 #hour, #minute, #second {
     position: absolute;
     background: black;
-    border-radius: 10px;
+    border-radius: 1rem;
     transform-origin: bottom;
 }
 
@@ -52,18 +60,207 @@ body {
     opacity: 0.8;
 }
 
+/* Main clock ends */
+
+/* .content {
+    position: relative;
+    margin-top: 45rem;
+    margin-left: 35rem;
+} */
+
+p.mainslogan {
+  top: 100px;
+    font-size: 3.6rem;
+    text-align: center;
+    position: relative;
+    /* display: inline-block; */
+    /* width: 72rem; */
+    margin: auto;
+    animation: example1 linear 4s alternate-reverse infinite;
+}
+
+/* .better {
+    font-size: 4.5rem;
+    letter-spacing: .2rem;
+} */
+
+.b:hover {
+    color: hotpink;
+    font-size: 5rem;
+    cursor: default;
+}
+
+.e:hover {
+    color: rgb(66, 164, 255);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.t:hover {
+    color: rgb(173, 255, 105);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.e2:hover {
+    color: rgb(253, 255, 105);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.r:hover {
+    color: rgb(2, 0, 143);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.m:hover {
+    color: rgb(241, 160, 160);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.e3:hover {
+    color: rgb(248, 23, 23);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.n:hover {
+    color: rgb(235, 138, 11);
+    font-size: 5rem;
+    cursor: default;
+}
+
+.t2:hover {
+    color: rgb(211, 35, 218);
+    font-size: 5rem;
+    cursor: default;
+}
+
 @media(max-width: 998px) {
     html {
         font-size: 55%;
+        text-align: center;
     }
 }
 
 @media(max-width: 768px) {
     html {
         font-size: 45%;
+        text-align: center;
     }
+}
+
+@keyframes bgchange {
+    from {background-color: #d8ac9c;}
+    to {background-color: #5f939a;}
 }
 
 
 
+img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    animation: textloop linear 10s infinite;
+    opacity: 0.4;
+}
 
+.one {
+    top: 2%;
+}
+
+.two {
+    top: 20%;
+    right: 20px;
+    animation: textloopright linear 2s infinite;
+}
+
+.three {
+    top: 45%;
+    left: 80px;
+    animation: textloop linear 8s infinite;
+}
+
+.four {
+    top: 60%;
+    left: 240px;
+}
+
+.five {
+    top: 80%;
+    right: 50px;
+    animation: textloopright linear 5s infinite;
+}
+
+.special {
+
+    height: 250px;
+    width: 250px;
+}
+
+.six {
+    right: 100px;
+    animation: textloopright linear 4s infinite;
+}
+
+.seven {
+    left: 1000px;
+    top: 30%;
+    /* animation: textloopright linear 5s infinite; */
+}
+
+.eight {
+    left: 10px;
+    top: 40%;
+    /* animation: textloopright linear 5s infinite; */
+}
+
+.nine {
+    right: 100px;
+    top: 65%;
+    animation: textloopright linear 3s infinite;
+}
+
+@keyframes textloop {
+    0% {
+        transform: translateX(200vh)
+    }
+    100% {
+        transform: translateX(-140vh);
+    }
+}
+
+@keyframes textloopright {
+    0% {
+        transform: translateX(150vh);
+    }
+    100% {
+        transform: translateX(-200vh);
+    }
+}
+
+@keyframes clock1 {
+  from {background-color: #d8ac9c;}
+  to {background-color: #04009a;}
+}
+
+/* @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+
+@keyframes example1 {
+  0%   {color:dark; }
+  25%  {color:dark;}
+  50%  {color:dark; }
+  75%  {color:dark; }
+  100% {color:dark; }
+}
