@@ -15,18 +15,15 @@ body {
 }
 
 #clockContainer {
-    border: 2px solid red;
+    border: 2px solid black;
     position: relative;
     background: url(clock.jpg) no-repeat;
     height: 40rem;
     width: 40rem;
     background-size: 100%;
     border-radius: 50%;
-    /* top: 2.5rem;
-    margin-left: 50vw; */
-    /* left: 36%; */
-    /* display: inline-block; */
     margin: auto;
+    opacity: 1;
 }
 
 #hour, #minute, #second {
@@ -62,25 +59,12 @@ body {
 
 /* Main clock ends */
 
-/* .content {
-    position: relative;
-    margin-top: 45rem;
-    margin-left: 35rem;
-} */
-
 p.mainslogan {
     font-size: 3.6rem;
     text-align: center;
     position: relative;
-    /* display: inline-block; */
-    /* width: 72rem; */
     margin: auto;
 }
-
-/* .better {
-    font-size: 4.5rem;
-    letter-spacing: .2rem;
-} */
 
 .b:hover {
     color: hotpink;
@@ -136,10 +120,14 @@ p.mainslogan {
     cursor: default;
 }
 
+/* Text ends */
+
+/* BG images starts */
+
 img {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
     background-size: 100%;
     border-radius: 50%;
     display: inline-block;
@@ -148,57 +136,55 @@ img {
 }
 
 .one {
-    top: 10px;
+    top: 1rem;
 }
 
 .two {
-    top: 180px;
-    right: 20px;
+    top: 18rem;
+    right: 2rem;
     animation: textloopright linear 2s infinite;
 }
 
 .three {
-    top: 350px;
-    left: 80px;
+    top: 35rem;
+    left: 8rem;
     animation: textloop linear 8s infinite;
 }
 
 .four {
-    top: 520px;
-    left: 240px;
+    top: 52rem;
+    left: 24rem;
 }
 
 .five {
-    top: 690px;
-    right: 50px;
+    top: 69rem;
+    right: 5rem;
     animation: textloopright linear 5s infinite;
 }
 
 .special {
-    height: 250px;
-    width: 250px;
+    height: 25rem;
+    width: 25rem;
 }
 
 .six {
-    right: 100px;
+    right: 10rem;
     animation: textloopright linear 4s infinite;
 }
 
 .seven {
-    left: 1000px;
-    top: 180px;
-    /* animation: textloopright linear 5s infinite; */
+    left: 100rem;
+    top: 18rem;
 }
 
 .eight {
-    left: 10px;
-    top: 310px;
-    /* animation: textloopright linear 5s infinite; */
+    left: 1rem;
+    top: 31rem;
 }
 
 .nine {
-    right: 100px;
-    top: 490px;
+    right: 10rem;
+    top: 49rem;
     animation: textloopright linear 3s infinite;
 }
 
