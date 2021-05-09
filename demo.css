@@ -11,7 +11,7 @@ body {
    background-color: #3edbf0;
     box-sizing: border-box;
     overflow: hidden;
-    animation: bgchange xample linear 4s alternate-reverse infinite;
+    animation: bgchange linear 4s alternate-reverse infinite;
 }
 
 #clockContainer {
@@ -22,11 +22,8 @@ body {
     width: 40rem;
     background-size: 100%;
     border-radius: 50%;
-    /* top: 2.5rem;
-    margin-left: 50vw; */
-    /* left: 36%; */
-    /* display: inline-block; */
     margin: auto;
+    opacity: 1;
 }
 
 #hour, #minute, #second {
@@ -62,27 +59,13 @@ body {
 
 /* Main clock ends */
 
-/* .content {
-    position: relative;
-    margin-top: 45rem;
-    margin-left: 35rem;
-} */
 
 p.mainslogan {
-  top: 100px;
     font-size: 3.6rem;
     text-align: center;
     position: relative;
-    /* display: inline-block; */
-    /* width: 72rem; */
     margin: auto;
-    animation: example1 linear 4s alternate-reverse infinite;
 }
-
-/* .better {
-    font-size: 4.5rem;
-    letter-spacing: .2rem;
-} */
 
 .b:hover {
     color: hotpink;
@@ -138,6 +121,93 @@ p.mainslogan {
     cursor: default;
 }
 
+
+/* Text ends */
+
+/* BG images starts */
+
+img {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    background-size: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    animation: textloop linear 10s infinite;
+    opacity: 0.4;
+}
+
+.one {
+    top: 1rem;
+}
+
+.two {
+    top: 18rem;
+    right: 2rem;
+    animation: textloopright linear 2s infinite;
+}
+
+.three {
+    top: 35rem;
+    left: 8rem;
+    animation: textloop linear 8s infinite;
+}
+
+.four {
+    top: 52rem;
+    left: 24rem;
+}
+
+.five {
+    top: 69rem;
+    right: 5rem;
+    animation: textloopright linear 5s infinite;
+}
+
+.special {
+    height: 25rem;
+    width: 25rem;
+}
+
+.six {
+    right: 10rem;
+    animation: textloopright linear 4s infinite;
+}
+
+.seven {
+    left: 100rem;
+    top: 18rem;
+}
+
+.eight {
+    left: 1rem;
+    top: 31rem;
+}
+
+.nine {
+    right: 10rem;
+    top: 49rem;
+    animation: textloopright linear 3s infinite;
+}
+
+@keyframes textloop {
+    0% {
+        transform: translateX(200vh)
+    }
+    100% {
+        transform: translateX(-140vh);
+    }
+}
+
+@keyframes textloopright {
+    0% {
+        transform: translateX(150vh);
+    }
+    100% {
+        transform: translateX(-200vh);
+    }
+}
+
 @media(max-width: 998px) {
     html {
         font-size: 55%;
@@ -158,6 +228,10 @@ p.mainslogan {
 }
 
 
+@keyframes clock1 {
+    from {background-color: #f05945;}
+    to {background-color: #ca847a;}
+}
 
 img {
     position: absolute;
