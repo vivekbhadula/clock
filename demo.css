@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: brown;
+   background-color: #3edbf0;
     box-sizing: border-box;
     overflow: hidden;
     animation: bgchange linear 4s alternate-reverse infinite;
@@ -58,6 +58,7 @@ body {
 }
 
 /* Main clock ends */
+
 
 p.mainslogan {
     font-size: 3.6rem;
@@ -119,6 +120,7 @@ p.mainslogan {
     font-size: 5rem;
     cursor: default;
 }
+
 
 /* Text ends */
 
@@ -221,13 +223,118 @@ img {
 }
 
 @keyframes bgchange {
-    from {background-color: #3edbf0;}
-    to {background-color: #c0fefc;}
+    from {background-color: #d8ac9c;}
+    to {background-color: #5f939a;}
 }
+
 
 @keyframes clock1 {
     from {background-color: #f05945;}
     to {background-color: #ca847a;}
 }
 
+img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    animation: textloop linear 10s infinite;
+    opacity: 0.4;
+}
 
+.one {
+    top: 2%;
+}
+
+.two {
+    top: 20%;
+    right: 20px;
+    animation: textloopright linear 2s infinite;
+}
+
+.three {
+    top: 45%;
+    left: 80px;
+    animation: textloop linear 8s infinite;
+}
+
+.four {
+    top: 60%;
+    left: 240px;
+}
+
+.five {
+    top: 80%;
+    right: 50px;
+    animation: textloopright linear 5s infinite;
+}
+
+.special {
+
+    height: 250px;
+    width: 250px;
+}
+
+.six {
+    right: 100px;
+    animation: textloopright linear 4s infinite;
+}
+
+.seven {
+    left: 1000px;
+    top: 30%;
+    /* animation: textloopright linear 5s infinite; */
+}
+
+.eight {
+    left: 10px;
+    top: 40%;
+    /* animation: textloopright linear 5s infinite; */
+}
+
+.nine {
+    right: 100px;
+    top: 65%;
+    animation: textloopright linear 3s infinite;
+}
+
+@keyframes textloop {
+    0% {
+        transform: translateX(200vh)
+    }
+    100% {
+        transform: translateX(-140vh);
+    }
+}
+
+@keyframes textloopright {
+    0% {
+        transform: translateX(150vh);
+    }
+    100% {
+        transform: translateX(-200vh);
+    }
+}
+
+@keyframes clock1 {
+  from {background-color: #d8ac9c;}
+  to {background-color: #04009a;}
+}
+
+/* @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+
+@keyframes example1 {
+  0%   {color:dark; }
+  25%  {color:dark;}
+  50%  {color:dark; }
+  75%  {color:dark; }
+  100% {color:dark; }
+}
